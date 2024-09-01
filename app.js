@@ -17,7 +17,7 @@ const countSplitCheck = () => {
     error.textContent = "";
 
     const totalAmount = parseFloat(price.value) * (1 + parseFloat(tip.value));
-    const amountPerPerson = totalAmount / parseFloat(people.value);
+    const amountPerPerson = totalAmount / parseInt(people.value);
 
     cost.textContent = amountPerPerson.toFixed(2);
     costInfo.style.display = "block";
